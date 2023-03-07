@@ -1,0 +1,13 @@
+CREATE DATABASE  IF NOT EXISTS `spring_jpa_quest` /*!40100 DEFAULT CHARACTER SET latin1 */;
+USE `spring_jpa_quest`;
+DROP TABLE IF EXISTS `school`;
+DROP TABLE IF EXISTS `wizard`;
+CREATE TABLE `school` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+CREATE TABLE `wizard` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+)
